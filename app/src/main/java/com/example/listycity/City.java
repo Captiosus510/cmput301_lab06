@@ -6,6 +6,12 @@ package com.example.listycity;
 public class City implements Comparable<City>{
     private String city;
     private String province;
+
+    /**
+     * This creates a new city.
+     * @param city the name of the city.
+     * @param province the name of the province.
+     */
     public City(String city, String province){
         this.city = city;
         this.province = province;
@@ -30,7 +36,7 @@ public class City implements Comparable<City>{
     /**
      * This compares two cities.
      * @param o the object to be compared.
-     * @return
+     * @return a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
      */
     @Override
     public int compareTo(City o) {
@@ -39,8 +45,8 @@ public class City implements Comparable<City>{
 
     /**
      * This returns a string representation of the city.
-     * @param o
-     * @return
+     * @param o the object to be compared.
+     * @return a string representation of the city.
      */
     @Override
     public boolean equals(Object o) {
